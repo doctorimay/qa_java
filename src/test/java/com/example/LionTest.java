@@ -29,7 +29,7 @@ public class LionTest {
     @Test(expected = Exception.class)
     public void getManeExceptions() throws Exception {
         Lion lion = new Lion(feline, "Какая-то дичь");
-        when(lion.hasMane).thenThrow(Exception.class);
+        lion.doesHaveMane();
     }
     @Test
     public void getKitties() throws Exception {
